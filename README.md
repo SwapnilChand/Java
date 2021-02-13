@@ -1,4 +1,4 @@
 # Java
-My uni related stuff
+My uni related stuff.
 And other noice noice stuff
 :)
