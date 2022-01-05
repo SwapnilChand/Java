@@ -1,0 +1,17 @@
+//https://leetcode.com/problems/running-sum-of-1d-array/
+//https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/05-arrays.md
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int runsum[] = new int[nums.length];
+        for(int i :nums){
+            
+            runsum[i] = sumUpToNow(i); 
+        }
+    }
+    
+    public int sumUpToNow(int n){
+        for(int i = 0; i <= n; i++){
+            
+        }
+    }
+}
