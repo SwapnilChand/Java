@@ -1,0 +1,2 @@
+the statements which get evaluated each and everytime 
+

@@ -1,0 +1,12 @@
+   
+{:source-paths {"src"}
+
+ :nrepl        {:port 8450}
+ :dev-http     {7777 "public"}
+
+ :dependencies [[re-frame "1.4.3"]
+                [reagent/reagent {:mvn/version "1.2.0"}]]
+ 
+ :builds        {:app {:tarbget :browser}}
+
+ }

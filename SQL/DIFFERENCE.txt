@@ -1,0 +1,32 @@
+Q: Find the difference between the total number of CITY entries in the table and 
+the number of distinct CITY entries in the table.
+
+A:
+select count(city) - count(distinct city)
+from station;
+
+Q2: Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths 
+(i.e.: number of characters in the name). 
+If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+
+A:
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, CITY limit 1; 
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, CITY limit 1; 
+
+Q3:
+Extract 3 characters from a string (starting from left):
+
+A:
+SELECT LEFT('SQL Tutorial', 3) AS ExtractString;
+
+Q4:
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. 
+Your result cannot contain duplicates.
+
+A:
+select distinct city from station where left(city,1) in ('a','e','i','o','u');
+
+Q5:
+Extract a substring from a string (start at position 5, extract 3 characters):
+A:
+SELECT SUBSTR("SQL Tutorial", 5, 3) AS ExtractString;
